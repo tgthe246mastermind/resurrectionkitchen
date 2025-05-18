@@ -1,0 +1,387 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resurrection Kitchen and Neighbourhood Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js",
+                "ScrollTrigger": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js",
+                "ScrollToPlugin": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Resurrection Kitchen Logo">
+        </div>
+        <div class="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <!-- <li><a href="#menu" class="nav-link">Menu</a></li> -->
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <!-- <li><a href="#events" class="nav-link">Events</a></li> -->
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h1>Resurrection Kitchen</h1>
+                <h2>& Neighbourhood Shop</h2>
+                <p>Nourishing food with a conscious vision</p>
+                <!-- <a href="#menu" class="btn">View Our Menu</a> -->
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img style="width: 100%; height: auto;" src="https://www.wm.edu/news/images/2017/photosets/howrastafarimoveswilliamandmary/rastafarianvillagethegleane.jpg" alt="About Resurrection Kitchen">
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Resurrection Kitchen was born from a passion for sustainable food practices and community building. We believe in creating nourishing meals that are good for both people and the planet.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>We strive to source local, organic ingredients whenever possible, supporting local farmers and reducing our environmental footprint. Our Neighbourhood Shop extends this vision by offering sustainable products for your home.</p>
+                        
+                        <h3>Our Community</h3>
+                        <p>More than just a restaurant and shop, we're a community hub where neighbors can gather, connect, and share experiences around good food and sustainable living.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="menu" class="section">
+            <div class="container">
+                <h2 class="section-title">Menu</h2>
+                
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="breakfast">Breakfast</button>
+                    <button class="menu-tab" data-category="lunch">Lunch</button>
+                    <button class="menu-tab" data-category="dinner">Dinner</button>
+                    <button class="menu-tab" data-category="drinks">Drinks</button>
+                </div>
+                
+                <div class="menu-items">
+                    <div class="menu-category active" id="breakfast">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="breakfast1.png" alt="Breakfast Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Farm Fresh Breakfast Bowl</h3>
+                                <p>Organic eggs, avocado, roasted sweet potatoes, and seasonal greens</p>
+                                <span class="price">$14</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="breakfast2.png" alt="Breakfast Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Heritage Grain Pancakes</h3>
+                                <p>Served with house-made preserves and maple syrup</p>
+                                <span class="price">$12</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="lunch">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="lunch1.png" alt="Lunch Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Seasonal Harvest Bowl</h3>
+                                <p>Quinoa, roasted vegetables, farm greens, and tahini dressing</p>
+                                <span class="price">$16</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="lunch2.png" alt="Lunch Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Artisan Sandwich</h3>
+                                <p>House-baked bread with seasonal fillings and side salad</p>
+                                <span class="price">$14</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="dinner">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="dinner1.png" alt="Dinner Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Slow-Roasted Root Vegetable Plate</h3>
+                                <p>With housemade herbs and spices</p>
+                                <span class="price">$18</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="dinner2.png" alt="Dinner Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Farm-to-Table Pasta</h3>
+                                <p>Fresh pasta with seasonal vegetables and herbs</p>
+                                <span class="price">$20</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="drinks">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="drink1.png" alt="Drink Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Fresh Pressed Juices</h3>
+                                <p>Selection of seasonal fruits and vegetables</p>
+                                <span class="price">$8</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="drink2.png" alt="Drink Item">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Herbal Teas</h3>
+                                <p>Locally foraged and organic herbal blends</p>
+                                <span class="price">$5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="shop" class="section">
+            <div class="container">
+                <h2 class="section-title">Neighbourhood Shop</h2>
+                
+                <div class="shop-categories">
+                    <div class="shop-category">
+                        <div class="shop-category-image">
+                            <img src="shop1.png" alt="Pantry Items">
+                        </div>
+                        <h3>Pantry Essentials</h3>
+                        <p>Organic grains, spices, preserves, and more to stock your conscious kitchen.</p>
+                    </div>
+                    
+                    <div class="shop-category">
+                        <div class="shop-category-image">
+                            <img src="shop2.png" alt="Homewares">
+                        </div>
+                        <h3>Sustainable Homewares</h3>
+                        <p>Eco-friendly kitchen tools, tableware, and home goods for mindful living.</p>
+                    </div>
+                    
+                    <div class="shop-category">
+                        <div class="shop-category-image">
+                            <img src="shop3.png" alt="Local Crafts">
+                        </div>
+                        <h3>Local Crafts</h3>
+                        <p>Handmade items from local artisans that showcase community talent.</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="shop-cta">
+                    <p>Visit our shop in-store to browse our full selection of sustainable products.</p>
+                    <a href="#contact" class="btn">Find Us</a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- <section id="events" class="section">
+            <div class="container">
+                <h2 class="section-title">Events</h2>
+                
+                <div class="events-list">
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Community Dinner</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 7:00 PM - 10:00 PM</p>
+                            <p>Join us for a communal dining experience featuring a seasonal menu and local musicians.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Sustainable Cooking Workshop</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 4:00 PM</p>
+                            <p>Learn how to make the most of seasonal produce with our head chef.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Farmer's Market</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 1:00 PM</p>
+                            <p>Meet our local suppliers and stock up on fresh, organic produce and artisanal goods.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>123 Green Street<br>Eco Valley, EV 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>
+                                    Monday - Friday: 8AM - 9PM<br>
+                                    Saturday - Sunday: 9AM - 10PM
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a121f1616153a081f090f08081f190e13151411130e19121f1454191517">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div> -->
+                    </div>
+                    
+                    <!-- <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div> -->
+                 <img src="https://www.tech-recipes.com/wp-content/uploads/2020/07/feature-image.jpg" alt="Contact Us" class="contact-image">
+                
+                
+                
+                
+                
+                </div>
+                
+                <div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0039833749483!2d-59.61786469999999!3d13.098933899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f71bb86f1df3%3A0xfbbddf0ba24761d0!2sSuttle%20St%2C%20Bridgetown%2C%20Saint%20Michael%20Barbados!5e0!3m2!1sen!2s!4v1747527862187!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Resurrection Kitchen Logo">
+                    <p>Nourishing food with a conscious vision</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Rastafari Company Driven by Rastafari Principles</h3>
+                    <p>ONE PRFECT BALANCE!!!</p>
+                    <!-- <form id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Resurrection Kitchen and Neighbourhood Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="script.js"></script>
+</body>
+</html>
